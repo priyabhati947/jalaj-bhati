@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TEAM ROBO | Jalaj</title>
+  <title>Radhe Radhe Website</title>
 
   <style>
     body {
+      margin: 0;
+      font-family: Arial;
       background: #0f172a;
       color: white;
-      font-family: Arial;
       text-align: center;
-      margin: 0;
     }
 
-    header {
-      background: #1e293b;
-      padding: 20px;
-    }
-
-    h1 {
+    /* Splash Animation */
+    #splash {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
       color: #22c55e;
+      animation: moveUp 2s forwards;
+      animation-delay: 1s;
     }
 
-    .container {
-      margin-top: 40px;
+    @keyframes moveUp {
+      0% {transform: translateY(0);}
+      100% {transform: translateY(-80vh); font-size: 20px;}
+    }
+
+    /* Form Section */
+    #formSection {
+      margin-top: 150px;
+      opacity: 0;
+      transition: 1s;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      border-radius: 8px;
+      border: none;
     }
 
     button {
-      padding: 12px 20px;
-      margin: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
+      padding: 10px 20px;
       background: #22c55e;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: #16a34a;
-      transform: scale(1.1);
-    }
-
-    #output {
-      margin-top: 30px;
-      font-size: 18px;
-      color: #38bdf8;
-    }
-
-    img {
-      margin-top: 20px;
-      border-radius: 10px;
     }
 
   </style>
@@ -57,40 +60,26 @@
 
 <body>
 
-<header>
-  <h1>TEAM ROBO 🚀</h1>
-  <p>Interactive Website by Jalaj</p>
-</header>
+<div id="splash">Radhe Radhe 🙏</div>
 
-<div class="container">
+<div id="formSection">
+  <h2>Enter Your Details</h2>
 
-  <button onclick="showMessage()">Show Message</button>
-  <button onclick="changeColor()">Change Background</button>
-  <button onclick="showImage()">Show Robot</button>
-  <button onclick="hideImage()">Hide Robot</button>
+  <input type="text" placeholder="Your Name"><br>
+  <input type="text" placeholder="Your Class"><br>
+  <input type="number" placeholder="Your Age"><br>
 
-  <div id="output"></div>
-
-  <img id="robotImg" src="https://via.placeholder.com/300" style="display:none;">
-
+  <button onclick="submitForm()">Submit</button>
 </div>
 
 <script>
-  function showMessage() {
-    document.getElementById("output").innerText = "Welcome to TEAM ROBO 😎";
-  }
+  // Show form after animation
+  setTimeout(() => {
+    document.getElementById("formSection").style.opacity = "1";
+  }, 2500);
 
-  function changeColor() {
-    document.body.style.background =
-      "#" + Math.floor(Math.random()*16777215).toString(16);
-  }
-
-  function showImage() {
-    document.getElementById("robotImg").style.display = "block";
-  }
-
-  function hideImage() {
-    document.getElementById("robotImg").style.display = "none";
+  function submitForm() {
+    alert("Details Submitted 🙏");
   }
 </script>
 
