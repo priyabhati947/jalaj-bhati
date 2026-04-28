@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Radhe Radhe Website</title>
+  <title>Jalaj | Web Developer</title>
 
   <style>
     body {
@@ -12,38 +12,36 @@
       text-align: center;
     }
 
-    /* Radhe Radhe text */
-    #title {
-      position: fixed;
-      width: 100%;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 40px;
+    header {
+      background: #1e293b;
+      padding: 20px;
+    }
+
+    h1 {
       color: #22c55e;
-      transition: all 1.5s ease;
     }
 
-    /* After animation (move to top) */
-    .top {
-      top: 20px !important;
-      transform: translateY(0) !important;
-      font-size: 24px !important;
-    }
-
-    /* Form */
-    #formSection {
-      margin-top: 120px;
-      opacity: 0;
-      transition: 1s;
-    }
-
-    input {
+    nav {
+      background: #334155;
       padding: 10px;
-      margin: 10px;
-      width: 220px;
-      border-radius: 8px;
-      border: none;
-      font-size: 16px;
+    }
+
+    nav a {
+      color: white;
+      margin: 15px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    .project {
+      background: #1e293b;
+      margin: 20px auto;
+      padding: 20px;
+      width: 70%;
+      border-radius: 10px;
     }
 
     button {
@@ -52,7 +50,6 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 16px;
     }
 
   </style>
@@ -60,35 +57,48 @@
 
 <body>
 
-<div id="title">Radhe Radhe 🙏</div>
+<header>
+  <h1>Jalaj 🚀</h1>
+  <p>I build websites and robotics projects</p>
+</header>
 
-<div id="formSection">
-  <h2>Enter Your Details</h2>
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <input type="text" id="name" placeholder="Your Name"><br>
-  <input type="text" id="class" placeholder="Your Class"><br>
-  <input type="number" id="age" placeholder="Your Age"><br>
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a beginner web developer. I create websites using HTML, CSS, and JavaScript.</p>
+</section>
 
-  <button onclick="submitForm()">Submit</button>
-</div>
+<section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="project">
+    <h3>TEAM ROBO Website</h3>
+    <p>My robotics project website</p>
+    <button onclick="openProject('https://priyabhati947.github.io/my-website')">View</button>
+  </div>
+
+  <div class="project">
+    <h3>Form Website</h3>
+    <p>User input form with animation</p>
+    <button onclick="alert('Upload this project link later')">View</button>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>WhatsApp: Your Number</p>
+  <p>Email: your@email.com</p>
+</section>
 
 <script>
-  // Move text to top after 2 seconds
-  setTimeout(() => {
-    document.getElementById("title").classList.add("top");
-  }, 2000);
-
-  // Show form after 3 seconds
-  setTimeout(() => {
-    document.getElementById("formSection").style.opacity = "1";
-  }, 3000);
-
-  function submitForm() {
-    let name = document.getElementById("name").value;
-    let cls = document.getElementById("class").value;
-    let age = document.getElementById("age").value;
-
-    alert("Radhe Radhe " + name + " 🙏");
+  function openProject(link) {
+    window.open(link, "_blank");
   }
 </script>
 
