@@ -7,41 +7,66 @@
     body {
       margin: 0;
       font-family: Arial;
-      background: #0f172a;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
       color: white;
-      text-align: center;
+      scroll-behavior: smooth;
     }
 
-    header {
-      background: #1e293b;
-      padding: 20px;
-    }
-
-    h1 {
-      color: #22c55e;
-    }
-
+    /* Navbar */
     nav {
-      background: #334155;
-      padding: 10px;
+      position: sticky;
+      top: 0;
+      background: rgba(0,0,0,0.7);
+      padding: 15px;
+      text-align: center;
+      backdrop-filter: blur(10px);
     }
 
     nav a {
       color: white;
       margin: 15px;
       text-decoration: none;
+      font-weight: bold;
     }
 
+    nav a:hover {
+      color: #22c55e;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: #22c55e;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* Sections */
     section {
-      padding: 40px;
+      padding: 60px 20px;
+      text-align: center;
     }
 
-    .project {
-      background: #1e293b;
+    /* Cards */
+    .card {
+      background: rgba(255,255,255,0.05);
       margin: 20px auto;
       padding: 20px;
-      width: 70%;
-      border-radius: 10px;
+      width: 80%;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
     }
 
     button {
@@ -52,40 +77,41 @@
       cursor: pointer;
     }
 
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.6);
+    }
+
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Jalaj 🚀</h1>
-  <p>I build websites and robotics projects</p>
-</header>
-
 <nav>
-  <a href="#about">About</a>
+  <a href="#home">Home</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>I am a beginner web developer. I create websites using HTML, CSS, and JavaScript.</p>
-</section>
+<div class="hero" id="home">
+  <h1>Jalaj 🚀</h1>
+  <p>I build modern websites and robotics projects</p>
+</div>
 
 <section id="projects">
   <h2>My Projects</h2>
 
-  <div class="project">
+  <div class="card">
     <h3>TEAM ROBO Website</h3>
     <p>My robotics project website</p>
     <button onclick="openProject('https://priyabhati947.github.io/my-website')">View</button>
   </div>
 
-  <div class="project">
-    <h3>Form Website</h3>
-    <p>User input form with animation</p>
-    <button onclick="alert('Upload this project link later')">View</button>
+  <div class="card">
+    <h3>Interactive Form</h3>
+    <p>Animated user input form</p>
+    <button onclick="alert('Add your link later')">View</button>
   </div>
 
 </section>
@@ -95,6 +121,10 @@
   <p>WhatsApp: Your Number</p>
   <p>Email: your@email.com</p>
 </section>
+
+<footer>
+  <p>© 2026 Jalaj Portfolio</p>
+</footer>
 
 <script>
   function openProject(link) {
