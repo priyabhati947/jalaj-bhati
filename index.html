@@ -12,29 +12,27 @@
       text-align: center;
     }
 
-    /* Splash Animation */
-    #splash {
+    /* Radhe Radhe text */
+    #title {
       position: fixed;
       width: 100%;
-      height: 100vh;
-      background: #0f172a;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      top: 50%;
+      transform: translateY(-50%);
       font-size: 40px;
       color: #22c55e;
-      animation: moveUp 2s forwards;
-      animation-delay: 1s;
+      transition: all 1.5s ease;
     }
 
-    @keyframes moveUp {
-      0% {transform: translateY(0);}
-      100% {transform: translateY(-80vh); font-size: 20px;}
+    /* After animation (move to top) */
+    .top {
+      top: 20px !important;
+      transform: translateY(0) !important;
+      font-size: 24px !important;
     }
 
-    /* Form Section */
+    /* Form */
     #formSection {
-      margin-top: 150px;
+      margin-top: 120px;
       opacity: 0;
       transition: 1s;
     }
@@ -42,9 +40,10 @@
     input {
       padding: 10px;
       margin: 10px;
-      width: 200px;
+      width: 220px;
       border-radius: 8px;
       border: none;
+      font-size: 16px;
     }
 
     button {
@@ -53,6 +52,7 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      font-size: 16px;
     }
 
   </style>
@@ -60,26 +60,35 @@
 
 <body>
 
-<div id="splash">Radhe Radhe 🙏</div>
+<div id="title">Radhe Radhe 🙏</div>
 
 <div id="formSection">
   <h2>Enter Your Details</h2>
 
-  <input type="text" placeholder="Your Name"><br>
-  <input type="text" placeholder="Your Class"><br>
-  <input type="number" placeholder="Your Age"><br>
+  <input type="text" id="name" placeholder="Your Name"><br>
+  <input type="text" id="class" placeholder="Your Class"><br>
+  <input type="number" id="age" placeholder="Your Age"><br>
 
   <button onclick="submitForm()">Submit</button>
 </div>
 
 <script>
-  // Show form after animation
+  // Move text to top after 2 seconds
+  setTimeout(() => {
+    document.getElementById("title").classList.add("top");
+  }, 2000);
+
+  // Show form after 3 seconds
   setTimeout(() => {
     document.getElementById("formSection").style.opacity = "1";
-  }, 2500);
+  }, 3000);
 
   function submitForm() {
-    alert("Details Submitted 🙏");
+    let name = document.getElementById("name").value;
+    let cls = document.getElementById("class").value;
+    let age = document.getElementById("age").value;
+
+    alert("Radhe Radhe " + name + " 🙏");
   }
 </script>
 
