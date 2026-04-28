@@ -1,50 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TEAM ROBO</title>
+  <title>TEAM ROBO | Jalaj</title>
+
+  <style>
+    body {
+      background: #0f172a;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+      margin: 0;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #22c55e;
+    }
+
+    .container {
+      margin-top: 40px;
+    }
+
+    button {
+      padding: 12px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #22c55e;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #16a34a;
+      transform: scale(1.1);
+    }
+
+    #output {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #38bdf8;
+    }
+
+    img {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+  </style>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <h1 align="center">🤖 TEAM ROBO</h1>
-    <hr>
+<header>
+  <h1>TEAM ROBO 🚀</h1>
+  <p>Interactive Website by Jalaj</p>
+</header>
 
-    <!-- Navigation -->
-    <p align="center">
-        <a href="#home">Home</a> |
-        <a href="#about">About</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#contact">Contact</a>
-    </p>
+<div class="container">
 
-    <hr>
+  <button onclick="showMessage()">Show Message</button>
+  <button onclick="changeColor()">Change Background</button>
+  <button onclick="showImage()">Show Robot</button>
+  <button onclick="hideImage()">Hide Robot</button>
 
-    <!-- Home Section -->
-    <h2 id="home">Welcome</h2>
-    <p>Welcome to TEAM ROBO website. Here you can see amazing robotics projects and ideas.</p>
+  <div id="output"></div>
 
-    <!-- About -->
-    <h2 id="about">About Me</h2>
-    <p>Hi, I am Jalaj. I love making robotics projects and sharing them on YouTube.</p>
+  <img id="robotImg" src="https://via.placeholder.com/300" style="display:none;">
 
-    <!-- Projects -->
-    <h2 id="projects">My Projects</h2>
-    <ul>
-        <li>Bluetooth Car 🚗</li>
-        <li>Fire Fighting Robot 🔥🤖</li>
-        <li>Water Level Alarm 💧</li>
-        <li>Automatic Dustbin 🗑️</li>
-    </ul>
+</div>
 
-    <!-- Contact -->
-    <h2 id="contact">Contact</h2>
-    <p>Email: teamrobo@gmail.com</p>
+<script>
+  function showMessage() {
+    document.getElementById("output").innerText = "Welcome to TEAM ROBO 😎";
+  }
 
-    <hr>
+  function changeColor() {
+    document.body.style.background =
+      "#" + Math.floor(Math.random()*16777215).toString(16);
+  }
 
-    <!-- Footer -->
-    <p align="center">© 2026 TEAM ROBO</p>
+  function showImage() {
+    document.getElementById("robotImg").style.display = "block";
+  }
+
+  function hideImage() {
+    document.getElementById("robotImg").style.display = "none";
+  }
+</script>
 
 </body>
 </html>
