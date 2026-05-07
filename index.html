@@ -2,41 +2,540 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="YssA6lQub8bLeAJI90QAsesKLt9QRdxckcdjrXIELSE" />
-    <title>Jalaj Singh Bhati</title>
+    <meta name="viewport" content="width=1200">
+    <title>Jalaj Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style> 
+        *{
+           margin: 0;
+           font-family: Arial;
+           border: border-box;
+        }
+        .navbar{ 
+         background-color: rgb(15, 17, 30);
+         height: 60px;
+         color: white;
+         justify-content: space-evenly;
+         display: flex;
+         align-items: center;
+        }
+
+        /* .navlogo{
+           height: 50px;
+            width: 100px;
+   
+        }
+        .logo{
+           background-image: url(amazon_logo.png);
+           background-size: cover;
+           height: 50px;
+           width: 100%;;
+        } */
+       .Jalaj{
+           display: flex;
+   
+        }
+        .deliver{
+           font-size: 0.75rem;
+           margin-left: 20px; 
+        }
+        .jalaj{
+           font-size: 1rem;
+           margin-left: 2px;
+          font-weight:700 ;
+        }
+        .navlogo img{
+           margin-top: 5px;
+        }
+        .searchbar{
+           display: flex;
+           justify-content:space-evenly;
+           width: 550px;
+           height:40px ;
+        }
+        .all{
+           width: 50px;
+           border-top-left-radius: 4px;
+           border-bottom-left-radius: 4px;
+           border: none; 
+        }
+        .input{
+           width: 100%;
+           font-size: 0.9rem;
+           border: none;
+        }
+        .searchicon{
+          width: 50px;
+           display: flex;
+           background-color:#febd68;
+           font-size:1.3rem ;
+          color: #0f1111;
+           align-items: center;
+           justify-content: center;
+           border-top-right-radius: 4px;
+           border-bottom-right-radius: 4px;
+           border: none; 
+        }
+        .en{
+            background-color: rgb(15, 17, 30);
+           border: none;
+           color: azure;
+           font-weight: 700;
+        }
+        .oo{
+          font-size: 0.75rem;
+        }
+        .ll{
+           font-size: 1rem;
+           font-weight: 700;
+        }
+        .cart{
+           display: flex;
+        }
+        .cart i{ 
+           font-size:2rem ;
+        }
+        .cart p{
+           margin-top: 16px;
+        }
+        .rrrr{
+           height: 38px;
+           background-color:rgba(15, 17, 35,0.9);
+           color: azure;
+           display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+        .bars{
+          display: flex;
+        }
+        .bars i{
+           font-size: 1.2rem;
+        }
+        .pa{
+           font-weight: 700;
+   
+        }
+        .par{
+            font-size: 0.88rem;
+        }
+        .para{
+          width: 655px;
+          font-size: 0.88rem;
+        }
+        .photo{
+            background-size: cover;
+            background-image: url("https://m.media-amazon.com/images/I/61Z5DaOEVeL._SX3000_.jpg " );
+            height: 350px;
+            display: flex;
+            
+            justify-content: center;
+        }
+        .div{
+            background-color:rgb(15, 17, 30);
+            color: white;
+            height: 35px;
+            width: 95%;
+            margin-top: 280px;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .work{
+            font-size: 0.8rem;
+        }
+        .ww{
+            color: #febd68;
+            font-size: 1.1rem;
+        }
+        .content{
+         background-color: rgb(170, 197, 188);
+         display: flex;
+         justify-content: space-evenly;
+         flex-wrap: wrap;
+        }
+        .pic{
+         height: 500px;
+         width: 30%;
+         background-color: white;
+         /* border: 1px solid blue; */
+         margin-bottom: 25px;
+         
+        }
+        .jalajbhati{
+         height: 190px;
+         width: 47.5%;
+         background-color: white;
+         /* border: 1px solid blue; */
+         margin-bottom: 6px;
+        }
+        .pp{
+         height: 385px;
+         margin-top: 15px;
+         margin-bottom: 15px;
+         background-size: cover;
+        }
+        .layout{
+         margin-top: 20px;
+         margin-bottom: 20px;
+         margin-left: 20px;
+         margin-right: 20px;
+        }
+        .boxbox{
+         display: flex;
+         justify-content: space-evenly;
+         margin-top: 15px;
+         flex-wrap: wrap;
+        }
+        .p{
+          height: 150px;
+         background-size:cover;
+         
+        }
+        .h2{
+         margin-top: 15px;
+         margin-left: 6px;
+        }
+        .aaa{
+         margin-left: 6px;
+         color: blue;
+        }
+        #jj{
+         border: 1px solid black;
+        }
+        .ss{
+         color: blue;
+        }
+        
+
+    </style>
 </head>
 <body>
-    <h1>Website Feedback Form</h1>
-
-    <form action="https://formspree.io/f/mpqbaawy" method="POST">
-
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="feedback"><br><br>
-
-        <p>How would you rate your experience?</p>
-        <input type="radio" id="excellent" name="feedback" value="Excellent">
-        <label for="excellent">Excellent</label><br>
-
-        <input type="radio" id="good" name="feedback" value="Good">
-        <label for="good">Good</label><br>
-
-        <input type="radio" id="poor" name="feedback" value="Poor">
-        <label for="poor">Poor</label><br><br>
-
-        <label for="suggestions">What would you like us to improve?</label><br>
-        <select id="suggestions" name="feedback">
-            <option value="design">Design</option>
-            <option value="content">Content</option>
-            <option value="navigation">Navigation</option>
-            <option value="performance">Performance</option>
-        </select><br><br>
-
-        <button type="submit">Submit Feedback</button>
-
-    </form>
+  <header>
+     <div class="navbar">
+          <div class=" navlogo">
+                <!-- <div class="logo"></div> -->
+                <img height="70px" width="118px" src="amazon_logo.png">
+          </div>
+          <div>
+                <p class="deliver">Deliver to</p>
+              <div class="Jalaj">
+                   <i class="fa-solid fa-location-dot"></i>
+                   <p class="jalaj">Jalaj</p>
+              </div>
+          </div>
+          <div class="searchbar">
+                <select class="all">
+                    <option> All</option>
+                </select>
+              <input placeholder="Search Jalaj Amazon" class="input">
+              <div class="searchicon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+          </div>
+          <div>
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png?_=20250221172329" height="12px" width="19px" >
+             <select class="en">
+                   <option>EN</option> 
+             </select>
+          </div>
+          <div>
+               <p class="oo" >Radhe-Radhe</p>
+               <p class="ll">  Accounts & Lists  </p>
+          </div>
+           <div>
+               <p class="oo" >Returns</p>
+               <p class="ll">& Orders </p>
+          </div>
+          <div class="cart">
+             <i class="fa-solid fa-cart-shopping"></i>
+             <p>Cart</p>
+          </div>
+     </div>
+      <div class="rrrr">
+          <div class="bars">
+             <i class="fa-solid fa-bars"></i>
+             <p class="pa">All</p>
+          </div> 
+    
+         <div class="par"><p>Today's deal</p> </div>
+         <div class="par" ><p>Gift Card</p> </div>
+         <div class="par"><p>Sell</p> </div>
+         <div class="par"><p>Registery</p> </div>
+         <div class="par"><p>Prime video</p> </div>
+         <div class="para" ><p>Customer service</p> </div>
+      </div>
+ </header>
+ <main>
+      <div class="photo">
+         <div class="div">
+            <p> Radhe-Radhe, The founder of this web clone is -<p class="ww">  Jalaj Singh Bhati || Frontend Developer</p>. <p class="work">{website completion work is in the progress.}</p></p>
+         </div>
+     </div>
+      <div class="check">
+          <div class="content">
+              <div class="pic">
+                 <div class="layout">
+                     <h2>Get your Game on</h2>
+                     <div class="pp" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg);"></div>
+                     <a class="ss">see more</a>
+                 </div>
+              </div>
+              <div class="pic">
+                <h2 class="h2">Shop Fashion for less</h2>
+                <div class="boxbox">
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg);"></div>
+                          <a>Jeans under $50</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg);"></div>
+                          <a>Tops under $30</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg);"></div>
+                          <a>Dresses under $35</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg);"></div>
+                          <a>Shoes under $50</a>
+                       </div>
+                    </div>
+                </div>
+                <a class="aaa">see more</a>
+              </div>
+              <div class="pic">
+                <h2 class="h2">Gifts MOM wants</h2>
+                <div class="boxbox">
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/melody/uploads/cc1ae3bc-426b-4061-9787-7a5d0c620f4a_MuseDesktop372X232_1X/AIS_MDay_01_2026_Exports_MDay26_01_Muse_Prod_melody_homepage_372x232_1X._SY116_CB783246474_.jpg);"></div>
+                          <a>Fashion gifts</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/melody/uploads/2e4eb612-2dc8-4718-ac9b-ba3cba0bc5b3_MuseDesktop372X232_1X/AIS_MDay_01_2026_Exports_MDay26_03_Muse_Prod_melody_homepage_372x232_1X._SY116_CB783246495_.jpg);"></div>
+                          <a>Beauty gifts</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/melody/uploads/a66ff0d8-2aa8-4cc3-9620-2db2a3b5cdc9_MuseDesktop372X232_1X/AIS_MDay_01_2026_Exports_MDay26_05_Muse_Prod_melody_homepage_372x232_1X._SY116_CB783246464_.jpg);"></div>
+                          <a>Teach gifts</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/melody/uploads/67747c14-905a-424e-8e95-3926478c4682_MuseDesktop372X232_1X/AIS_MDay_01_2026_Exports_MDay26_09_Muse_Prod_melody_homepage_372x232_1X._SY116_CB783246472_.jpg);"></div>
+                          <a>Home & kitchen gifts</a>
+                       </div>
+                    </div>
+                </div>
+                <a class="aaa">see more</a>
+              </div>
+              <div class="pic">
+                <h2 class="h2">Gear up to get Fit</h2>
+                <div class="boxbox" >
+                    <div class="jalajbhati " >
+                       <div class="lyout">
+                          <div class="p"id="jj" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Clothing._SY116_CB549022351_.jpg);"></div>
+                          <a>Clothing</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p"id="jj" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Trackers._SY116_CB549022351_.jpg);"></div>
+                          <a>Trackers</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p"id="jj" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Equipment._SY116_CB549022351_.jpg);"></div>
+                          <a>Equipements</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" id="jj"style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Deals_Fitness._SY116_CB549022351_.jpg);"></div>
+                          <a>Deals</a>
+                       </div>
+                    </div>
+                </div>
+                <a class="aaa">see more</a>
+              </div>
+              <div class="pic">
+                 <div class="layout">
+                     <h2>Top Gaming chairs</h2>
+                     <div class="pp" style=" background-image: url(https://m.media-amazon.com/images/I/617z5yRWHBL._AC_SY200_.jpg);"></div>
+                     <a class="ss">see more</a>
+                 </div>
+              </div>
+              <div class="pic">
+                <h2 class="h2">Level up your beauty routine</h2>
+                <div class="boxbox">
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Make-up._SY116_CB558654384_.jpg);"></div>
+                          <a>Makeup</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Brushes._SY116_CB558654384_.jpg);"></div>
+                          <a>Brushes</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Sponges._SY116_CB558654384_.jpg);"></div>
+                          <a>Sponges</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Mirrors._SY116_CB558654384_.jpg);"></div>
+                          <a>Mirrors</a>
+                       </div>
+                    </div>
+                </div>
+                <a class="aaa">see more</a>
+              </div>
+              <div class="pic">
+                <h2 class="h2">Most Loved watches</h2>
+                <div class="boxbox">
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/WomenWatches_1x._SY116_CB564394432_.jpg);"></div>
+                          <a>Womens</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/MenWatches_1x._SY116_CB564394432_.jpg);"></div>
+                          <a>Mens</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/GirlWatches_1x._SY116_CB564394432_.jpg);"></div>
+                          <a>Girls</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/BoyWatches_1x._SY116_CB564394432_.jpg);"></div>
+                          <a>Boys</a>
+                       </div>
+                    </div>
+                  </div>
+                <a class="aaa">see more</a>
+              </div>
+              <div class="pic">
+                <h2 class="h2">Have more fun with family</h2>
+                <div class="boxbox">
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Playground_sets._SY116_CB558654384_.jpg);"></div>
+                          <a>Outdoor play sets</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_STEM_toys_or_learning_toys._SY116_CB558654384_.jpg);"></div>
+                          <a>learning toys</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Action_figure._SY116_CB558654384_.jpg);"></div>
+                          <a>Action Figures</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Pretend_Play_Toys._SY116_CB558654384_.jpg);"></div>
+                          <a>Pretend play toys</a>
+                       </div>
+                    </div>
+                </div>
+                <a class="aaa">see more</a>
+              </div>
+              <div class="pic">
+                <h2 class="h2">Gaming Merchandise</h2>
+                <div class="boxbox">
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Apparel_1x._SY116_CB667159060_.jpg);"></div>
+                          <a>Apparel</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Hat_1x._SY116_CB667159060_.jpg);"></div>
+                          <a>Hats</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Figure_1x._SY116_CB667159060_.jpg);"></div>
+                          <a>Action Figures</a>
+                       </div>
+                    </div>
+                    <div class="jalajbhati">
+                       <div class="lyout">
+                       
+                          <div class="p" style=" background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mug_1x._SY116_CB667159063_.jpg);"></div>
+                          <a>Mugs</a>
+                       </div>
+                    </div>
+                </div>
+                <a class="aaa">see more</a>
+              </div>
+              <div class="pic">
+                 <div class="layout">
+                     <h2>Top Rated Books</h2>
+                     <div class="pp" style=" background-image: url(https://m.media-amazon.com/images/I/81P0NvoRrWL._AC_SY200_.jpg);"></div>
+                     <a class="ss">see more</a>
+                 </div>
+              </div>
+              <div class="pic">
+                 <div class="layout">
+                     <h2>Knowledge of Beauty</h2>
+                     <div class="pp" style=" background-image: url(https://m.media-amazon.com/images/I/81SgwN2CbsL._AC_SY200_.jpg);"></div>
+                     <a class="ss">see more</a>
+                 </div>
+              </div>
+              <div class="pic">
+                 <div class="layout">
+                     <h2>Clothing Combos</h2>
+                     <div class="pp" style=" background-image: url(https://m.media-amazon.com/images/I/51wDsZxtTLL._AC_SY200_.jpg);"></div>
+                     <a class="ss">see more</a>
+                 </div>
+              </div>
+          </div>
+      </div>
+ </main>
 </body>
-</html>
+</html> 
